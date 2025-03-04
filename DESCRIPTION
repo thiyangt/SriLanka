@@ -1,13 +1,29 @@
 Package: SriLanka
 Type: Package
 Title: Simple Feature Objects to Plot Sri Lanka Maps
-Version: 0.1.0
-Author: Thiyanga S. Talagala
+Version: 1.1.0
+Authors@R: 
+    person(given = "Thiyanga S.",
+           family = "Talagala",
+           role = c("aut", "cre"),
+           email = "ttalagala@sjp.ac.lk",
+           comment = c(ORCID = "0000-0002-0656-9789"))
 Maintainer: Thiyanga S. Talagala <ttalagala@sjp.ac.lk>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+Description: Provides simple features for creating map of the country, map of provinces, map of districts and map of divisional secretariats.
+URL: https://github.com/thiyangt/SriLanka
+BugReports: https://github.com/thiyangt/SriLanka/issues
 License: CC BY 4.0
-Depends: R (>= 3.5.0)
+Depends: 
+    R (>= 3.5),
+    sf
+Imports: 
+    dplyr,
+    lifecycle
+Suggests: 
+    ggplot2,
+    knitr,
+    rmarkdown,
+    tidyverse
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
