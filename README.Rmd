@@ -1,0 +1,50 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# SriLanka
+
+
+The goal of `SriLanka` is to provide simple feature objects to plot Sri Lanka maps.
+
+## Installation
+
+You can install the development version of `SriLanka` from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("thiyangt/SriLanka")
+```
+
+## Example
+
+
+
+```{r example}
+library(SriLanka)
+## basic example code
+library(ggplot2)
+library(sf)
+st_crs(lka_adm0)
+lka_adm0
+ggplot(lka_adm0) + 
+  geom_sf()
+ggplot(lka_adm1) + 
+  geom_sf()
+ggplot(lka_adm2) + 
+  geom_sf()
+ggplot(lka_adm3) + 
+  geom_sf()
+```
+
