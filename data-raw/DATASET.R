@@ -47,3 +47,11 @@ load("C:/SriLanka/inst/extdata/lka_adm4.rda")
 ggplot(lka_adm4) + 
   geom_sf()
 
+
+### Historical locations
+library(readxl)
+historical.paintings.locations <- read_excel("data-raw/historical_paintings.xlsx")
+View(historical_paintings)
+
+
+usethis::use_data(historical.paintings.locations, overwrite = TRUE)

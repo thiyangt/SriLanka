@@ -21,7 +21,7 @@ devtools::install_github("thiyangt/SriLanka")
 ``` r
 library(SriLanka)
 #> Loading required package: sf
-#> Linking to GEOS 3.13.0, GDAL 3.10.1, PROJ 9.5.1; sf_use_s2() is TRUE
+#> Linking to GEOS 3.13.1, GDAL 3.10.2, PROJ 9.5.1; sf_use_s2() is TRUE
 ## basic example code
 library(ggplot2)
 library(sf)
@@ -79,3 +79,18 @@ ggplot(lka_adm3) +
 ```
 
 <img src="man/figures/README-example-4.png" width="100%" />
+
+``` r
+data(historical.paintings.locations)
+head(historical.paintings.locations)
+#> # A tibble: 6 × 9
+#>   Kingdom      Location  Period Century UNESCO_heritage District Province Source
+#>   <chr>        <chr>     <chr>  <chr>   <chr>           <chr>    <chr>    <chr> 
+#> 1 Anuradhapura Vessagir… <NA>   5       <NA>            Anuradh… North C… https…
+#> 2 Anuradhapura Sigiriya  <NA>   5       Yes             Matale   Central  https…
+#> 3 Kandy        Dalada M… Kandy  17      Yes             Kandy    Central  https…
+#> 4 Kandy        Degaldor… Kandy  18      <NA>            Kandy    Central  https…
+#> 5 Kandy        Dambulla… Kandy  1st BCE Yes             Matale   Central  https…
+#> 6 Kandy        Medawala  Kandy  <NA>    <NA>            Kandy    Central  https…
+#> # ℹ 1 more variable: Accessed_date <dttm>
+```

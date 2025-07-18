@@ -48,3 +48,8 @@ ggplot(lka_adm3) +
   geom_sf()
 ```
 
+
+```{r}
+data(historical.paintings.locations)
+head(historical.paintings.locations)
+```
